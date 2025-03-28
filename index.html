@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUP CGPA Calculator</title>
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Ensure this is correct -->
+    
+    <!-- Link to the Oxygen font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Logo at the top -->
+    <img src="https://afd.gov.bd/sites/default/files/inline-images/BUP%20Logo_0.png" alt="BUP Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    
+    <!-- Title and Project -->
+    <h1 style="text-align: center;">BUP CGPA Calculator</h1>
+    <p style="text-align: center;">Project by Sahaf Arman</p>
+    
+    <!-- Input Section for the User -->
+    <div style="text-align: center;">
+        <label for="ct1">Class Test 1 (Out of 10): </label>
+        <input type="number" id="ct1" max="10" required><br>
+
+        <label for="ct2">Class Test 2 (Out of 10): </label>
+        <input type="number" id="ct2" max="10" required><br>
+
+        <label for="ct3">Class Test 3 (Out of 10): </label>
+        <input type="number" id="ct3" max="10" required><br>
+
+        <label for="ct4">Class Test 4 (Out of 10): </label>
+        <input type="number" id="ct4" max="10" required><br>
+
+        <label for="project">Project Paper (Out of 10): </label>
+        <input type="number" id="project" max="10" required><br>
+
+        <label for="assignment">Assignments/Case Study (Out of 10): </label>
+        <input type="number" id="assignment" max="10" required><br>
+
+        <label for="midterm">Midterm (Out of 20): </label>
+        <input type="number" id="midterm" max="20" required><br>
+
+        <label for="attendance">Attendance (Out of 10): </label>
+        <input type="number" id="attendance" max="10" required><br>
+
+        <button onclick="calculateCGPA()">Calculate</button>
+    </div>
+
+    <!-- Results will be displayed here -->
+    <div id="results" style="text-align: center; margin-top: 20px;"></div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script> <!-- Ensure this is correct -->
+</body>
+</html>
